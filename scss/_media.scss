@@ -39,4 +39,11 @@
 
 }
 /* END Navigation */
-
+@media only screen and (max-width: 905px) {
+	
+	.help_block{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
