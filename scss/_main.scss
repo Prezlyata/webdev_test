@@ -1,0 +1,307 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline; 
+}
+a{
+	text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; 
+}
+
+body {
+	line-height: 1; 
+}
+
+ol, ul {
+	list-style: none; 
+}
+
+blockquote, q {
+	quotes: none; 
+}
+
+blockquote {
+	&:before, &:after {
+		content: '';
+		content: none; 
+	} 
+}
+
+q {
+	&:before, &:after {
+		content: '';
+		content: none; 
+	} 
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0; 
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.head{
+	background: url('../img/bg_png/1.png');
+	background-repeat: no-repeat;
+	background-size: 75% 94%;
+	background-position: top right;
+	.menu{
+		margin-top: 40px;
+		ul{
+			display: flex;
+			justify-content: flex-end;
+			font-family: 'Comic Sans MS', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 18px;
+			text-transform: uppercase;
+			li{
+				margin-left: 37px;
+				a{
+					color: $colorWhite;
+				}
+			}
+		}
+	}
+	&_block{
+		display: flex;
+		padding-top: 145px;
+		padding-bottom: 245px;
+		justify-content: space-between;
+		&_left{
+			padding-top: 145px;
+			h2{
+				font-family: 'Comic Sans MS', sans-serif;
+				font-style: normal;
+				font-weight: 400;
+				font-size: 30px;
+				text-align: center;
+			}
+			form{
+				margin-top: 88px;
+				.group {
+					position: relative;
+					margin-bottom: 45px;
+				}
+				input {
+					font-size: 16px;
+					font-family: 'Comic Sans MS', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					padding: 10px 10px 10px 5px;
+					display: block;
+					width: 331px;
+					border: none;
+					border-bottom: 2px solid $colorLightSeaGreen;
+					&:focus {
+						outline: none;
+					}
+				}
+				label {
+					color: $colorGrey;
+					font-size: 16px;
+					font-family: 'Comic Sans MS', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					position: absolute;
+					pointer-events: none;
+					left: 5px;
+					top: 10px;
+					transition: 0.2s ease all;
+					-moz-transition: 0.2s ease all;
+					-webkit-transition: 0.2s ease all;
+				}
+				input {
+					&:focus ~ label, &:valid ~ label {
+						top: -20px;
+						font-size: 16px;
+						font-family: 'Comic Sans MS', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						text-transform: uppercase;
+						color: $colorLightSeaGreen;
+					}
+				}
+			}
+			.btn-send{
+				display: flex;
+				justify-content:center;
+				button{
+					background-image: linear-gradient(to right, $colorBtnOrange 0%, $colorBtnLightPink 51%, $colorBtnPink 100%);
+					background-size: 200% auto;
+					font-family:  'Comic Sans MS', sans-serif;
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: 600;
+					color: $colorWhite;
+					height: 60px;
+					width: 240px;
+					text-align: center;
+					border: none;
+					cursor: pointer;
+					transition: 0.5s;
+					border-radius: 5px;
+				}
+				button:focus{
+					outline: none;
+				}
+				button:hover{
+					background-position: right center;
+				}
+			}
+		}
+		&_right{
+			display: flex;
+			justify-content: flex-end;
+		}
+	}
+}
+/* mini-navigation*/
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
+$menuItems: 7;
+.hamburger {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 3px;
+	.mini-navigation {
+		position: absolute;
+		.position-mini{
+			margin-right: 20px;
+			cursor: pointer;
+		}
+		top: 0;
+		left: 0;
+		height: 50px;
+		width: 100%;
+		background: $colorWhite;
+		overflow: hidden;
+		transition: all 0.5s ease-out, background 1s ease-out;
+		transition-delay: 0.2s;
+		z-index: 1;
+		.burger-container {
+			position: relative;
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			cursor: pointer;
+			transform: rotate(0deg);
+			transition: all 0.3s $cubic;
+			user-select: none;
+			-webkit-tap-highlight-color: transparent;
+			#burger {
+				width: 18px;
+				height: 8px;
+				position: relative;
+				display: block;
+				margin: -4px auto 0;
+				top: 50%;
+				.bar {
+					width: 100%;
+					height: 1px;
+					display: block;
+					position: relative;
+					background: $colorBlack;
+					transition: all 0.3s $cubic;
+					transition-delay: 0s;
+					&.topBar {
+						transform: translateY(0px) rotate(0deg);
+					}
+					&.btmBar {
+						transform: translateY(6px) rotate(0deg);
+					}
+				}
+			}
+		}
+		ul.menu {
+			position: absolute;
+			display: block;
+			width: 90%;
+			margin-top: 53px;
+			padding: 0px 48px 0;
+			list-style: none;
+			z-index: 1000;
+			font-size: 16px;
+			font-family: 'Comic Sans MS', sans-serif;
+			font-style: normal;
+			font-weight: 400;
+			text-transform: uppercase;
+			li.menu-item {
+				margin-top: 5px;
+				transform: scale(1.15) translateY(-30px);
+				opacity: 0;
+				transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+				@for $i from 1 through $menuItems {
+					&:nth-child(#{$i}) {
+						transition-delay: #{0.56 - ($i * 0.07)}s;
+					}
+				}
+				a {
+					color: $colorLightSeaGreen;
+					display: block;
+					position: relative;
+					line-height: 2.35;
+					width: 100%;
+				}
+			}
+			li.menu-item:last-child{
+				border-bottom: none;
+			} 
+		}
+		&.menu-opened {
+			height: 100%;
+			background-color: $colorWhite;
+			transition: all 0.3s ease-in, background 0.5s ease-in;
+			transition-delay: 0.25s;
+			.burger-container {
+				transform: rotate(90deg);
+				#burger {
+					.bar {
+						transition: all 0.4s $cubic;
+						transition-delay: 0.2s;
+						&.topBar {
+							transform: translateY(4px) rotate(45deg);
+						}
+						&.btmBar {
+							transform: translateY(3px) rotate(-45deg);
+						}
+					}
+				}
+			}
+			ul.menu {
+				li.menu-item {
+					transform: scale(1) translateY(0px);
+					opacity: 1;
+					@for $i from 1 through $menuItems {
+						&:nth-child(#{$i}) {
+							transition-delay: #{0.07 * $i+0.2}s;
+						}
+					}
+				}
+			}
+			.icon {
+				&.icon-bag {
+					transform: translateX(75px);
+					transition-delay: 0.3s;
+				}
+			}
+		}
+	}
+}
+/* END mini-navigation */
+
+
+

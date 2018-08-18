@@ -1,0 +1,42 @@
+/* Navigation */
+@media only screen and (max-width: 905px) {
+
+	.menu{
+		display: none;
+	}
+	.head{
+		background: none;
+		&_block{
+			padding-top: 53px;
+		}
+	}
+	.head_block{
+		flex-direction: column-reverse;
+		&_right{
+			justify-content: center;
+			img{
+				width: 80%;
+				height: 80%;
+			}
+		}
+		&_left{
+			padding-top: 50px;
+			form{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 906px) {
+	
+	.hamburger{
+		display: none;
+	}
+
+}
+/* END Navigation */
+
