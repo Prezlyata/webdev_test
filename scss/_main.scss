@@ -122,8 +122,6 @@ table {
 					left: 5px;
 					top: 10px;
 					transition: 0.2s ease all;
-					-moz-transition: 0.2s ease all;
-					-webkit-transition: 0.2s ease all;
 				}
 				input {
 					&:focus ~ label, &:valid ~ label {
@@ -394,8 +392,116 @@ $menuItems: 7;
 				}
 			}
 			&_content:nth-child(2n) {
-				margin-left: 77px;
+				padding-left: 77px;
 			}
 		}
 	}	
+}
+.weOffer{
+	h2{
+		font-family: 'Comic Sans MS', sans-serif;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 500;
+		color: $colorBlack;
+		text-align: center;
+		padding-bottom: 70px;
+		padding-top: 40px;
+	}
+	&_block{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		&_content{
+			width: 300px;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+			padding-bottom: 50px;
+			&_description{
+				width: 167px;
+				padding-top: 10px;
+				font-family: 'Comic Sans MS', sans-serif;
+				font-size: 18px;
+				font-weight: 400;
+				color: $colorDarkGrey;
+			}
+			&_image1{
+				background: url('../img/offers/1.png');
+				background-size: 167px 169px;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 169px;
+				transition: 0.2s ease-in-out;
+				cursor: pointer;
+				background-position: right;
+			}
+			&_image1:hover{
+				background: url('../img/offers/hover1.png');
+				background-size: 167px 169px;
+			}
+			&_image2{
+				background: url('../img/offers/2.png');
+				background-size: 189x 189px;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 169px;
+				transition: 0.2s ease-in-out;
+				cursor: pointer;
+			}
+			&_image2:hover{
+				background: url('../img/offers/hover2.png');
+			}
+			&_image3{
+				background: url('../img/offers/3.png');
+				background-size: 189x 189px;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 169px;
+				transition: 0.2s ease-in-out;
+				cursor: pointer;
+			}
+			&_image3:hover{
+				background: url('../img/offers/hover3.png');
+			}
+			&_image4{
+				background: url('../img/offers/4.png');
+				background-size: 189x 189px;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 169px;
+				transition: 0.2s ease-in-out;
+				cursor: pointer;
+			}
+			&_image4:hover{
+				background: url('../img/offers/hover4.png');
+			}
+			&_image5{
+				background: url('../img/offers/5.png');
+				background-size: 189x 189px;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 169px;
+				transition: 0.2s ease-in-out;
+				cursor: pointer;
+			}
+			&_image5:hover{
+				background: url('../img/offers/hover5.png');
+			}
+			&_image6{
+				background: url('../img/offers/6.png');
+				background-size: 189x 189px;
+				background-repeat: no-repeat;
+				width: 167px;
+				height: 169px;
+				transition: 0.2s ease-in-out;
+				cursor: pointer;
+			}
+			&_image6:hover{
+				background: url('../img/offers/hover6.png');
+			}
+		}
+	}
 }

@@ -36,7 +36,6 @@
 	.hamburger{
 		display: none;
 	}
-
 }
 /* END Navigation */
 @media only screen and (max-width: 905px) {
@@ -45,5 +44,14 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.help_block_right_content{
+		padding-bottom: 40px;
+	}
+	.help_block_right_content:nth-child(2n) {
+		padding-left: 20px;
+	}
+	.help_block_right_content_box_description{
+		padding-left: 10px;
 	}
 }
