@@ -86,9 +86,10 @@ table {
 			h2{
 				font-family: 'Comic Sans MS', sans-serif;
 				font-style: normal;
-				font-weight: 400;
+				font-weight: 500;
 				font-size: 30px;
 				text-align: center;
+				text-transform: uppercase;
 			}
 			form{
 				margin-top: 88px;
@@ -133,6 +134,7 @@ table {
 						font-weight: 400;
 						text-transform: uppercase;
 						color: $colorLightSeaGreen;
+						text-transform: uppercase;
 					}
 				}
 			}
@@ -302,6 +304,47 @@ $menuItems: 7;
 	}
 }
 /* END mini-navigation */
-
-
-
+/* Our Requirement */
+.ourRequirement{
+	h2{
+		font-family:  'Comic Sans MS', sans-serif;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 500;
+		color: $colorBlack;
+		text-align: center;
+		padding-bottom: 100px;
+	}
+	&_block{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		&_content{
+			box-sizing: border-box;
+			width: 265px;
+			background-color: $colorLightGrey;
+			border-radius: 5px;
+			margin: 10px 10px 10px 10px;
+			padding: 20px 10px 10px 10px;
+			box-shadow: 0 0 10px rgba(2,2,2,0.5);
+			&_image{
+				text-align: center;
+			}
+			&_description{
+				padding-top: 10px;
+				p{
+					font-family:  'Comic Sans MS', sans-serif;
+					font-size: 14px;
+					font-weight: 400;
+					color: $colorDarkGrey;
+				}
+			}
+		}
+	}
+}
+/* End Our Requirement */
+/* Help */
+.help{
+	background-color: $colorLightSeaGreen;
+	
+}
