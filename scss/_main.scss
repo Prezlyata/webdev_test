@@ -304,6 +304,13 @@ $menuItems: 7;
 /* END mini-navigation */
 /* Our Requirement */
 .ourRequirement{
+	position: relative;
+	z-index: 100;
+	.sidePanelLeft {
+		position: absolute;
+		z-index: -1;
+		top: -108px
+	}
 	h2{
 		font-family:  'Comic Sans MS', sans-serif;
 		text-transform: uppercase;
@@ -398,6 +405,13 @@ $menuItems: 7;
 	}	
 }
 .weOffer{
+	position: relative;
+	z-index: 100;
+	.sidePanelRight {
+		position: absolute;
+		z-index: -1;
+		right:  0;
+	}
 	h2{
 		font-family: 'Comic Sans MS', sans-serif;
 		text-transform: uppercase;
@@ -681,4 +695,34 @@ $menuItems: 7;
 		}
 	}
 }
+.btn_top{
+	margin-bottom: 10px;
+	margin-right: 10px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 17px 17px;
+	border-radius: 50%;
+	box-shadow: 9px 9px 40px -4px rgba(0,0,0,0.75);
+	transition: all 0.7s ease;
+	background: $colorLightSeaGreen;
+	color: $colorLightGrey;
+	border: none;
+	cursor: pointer;
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	display: none;
+	z-index: 200;
+}
+.btn_top:focus {
+	outline: none; 
+}
+iframe{
+	width: 100%;
+	height: 450px;
+	border: 0px;
+}
+
 

@@ -261,36 +261,43 @@ table {
 
 /* END mini-navigation */
 /* Our Requirement */
-.ourRequirement h2 {
-  font-family: 'Comic Sans MS', sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 500;
-  color: #000;
-  text-align: center;
-  padding-bottom: 100px; }
-.ourRequirement_block {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-bottom: 130px; }
-  .ourRequirement_block_content {
-    box-sizing: border-box;
-    width: 265px;
-    background-color: #fafafa;
-    border-radius: 5px;
-    margin: 10px 10px 10px 10px;
-    padding: 20px 10px 10px 10px;
-    box-shadow: 0 0 10px rgba(2, 2, 2, 0.5); }
-    .ourRequirement_block_content_image {
-      text-align: center; }
-    .ourRequirement_block_content_description {
-      padding-top: 10px; }
-      .ourRequirement_block_content_description p {
-        font-family: 'Comic Sans MS', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        color: #272f2f; }
+.ourRequirement {
+  position: relative;
+  z-index: 100; }
+  .ourRequirement .sidePanelLeft {
+    position: absolute;
+    z-index: -1;
+    top: -108px; }
+  .ourRequirement h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    padding-bottom: 100px; }
+  .ourRequirement_block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 130px; }
+    .ourRequirement_block_content {
+      box-sizing: border-box;
+      width: 265px;
+      background-color: #fafafa;
+      border-radius: 5px;
+      margin: 10px 10px 10px 10px;
+      padding: 20px 10px 10px 10px;
+      box-shadow: 0 0 10px rgba(2, 2, 2, 0.5); }
+      .ourRequirement_block_content_image {
+        text-align: center; }
+      .ourRequirement_block_content_description {
+        padding-top: 10px; }
+        .ourRequirement_block_content_description p {
+          font-family: 'Comic Sans MS', sans-serif;
+          font-size: 14px;
+          font-weight: 400;
+          color: #272f2f; }
 
 /* End Our Requirement */
 /* Help */
@@ -337,96 +344,103 @@ table {
     .help_block_right_content:nth-child(2n) {
       padding-left: 77px; }
 
-.weOffer h2 {
-  font-family: 'Comic Sans MS', sans-serif;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 500;
-  color: #000;
-  text-align: center;
-  padding-bottom: 70px;
-  padding-top: 40px; }
-.weOffer_block {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .weOffer_block_content {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.weOffer {
+  position: relative;
+  z-index: 100; }
+  .weOffer .sidePanelRight {
+    position: absolute;
+    z-index: -1;
+    right: 0; }
+  .weOffer h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
     text-align: center;
-    align-items: center;
-    padding-bottom: 50px; }
-    .weOffer_block_content_description {
-      width: 167px;
-      padding-top: 10px;
-      font-family: 'Comic Sans MS', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      color: #272f2f; }
-    .weOffer_block_content_image1 {
-      background: url("../img/offers/1.png");
-      background-size: 167px 169px;
-      background-repeat: no-repeat;
-      width: 167px;
-      height: 169px;
-      transition: 0.2s ease-in-out;
-      cursor: pointer;
-      background-position: right; }
-    .weOffer_block_content_image1:hover {
-      background: url("../img/offers/hover1.png");
-      background-size: 167px 169px; }
-    .weOffer_block_content_image2 {
-      background: url("../img/offers/2.png");
-      background-size: 167px 169px;
-      background-repeat: no-repeat;
-      width: 167px;
-      height: 169px;
-      transition: 0.2s ease-in-out;
-      cursor: pointer; }
-    .weOffer_block_content_image2:hover {
-      background: url("../img/offers/hover2.png"); }
-    .weOffer_block_content_image3 {
-      background: url("../img/offers/3.png");
-      background-size: 167px 169px;
-      background-repeat: no-repeat;
-      width: 167px;
-      height: 169px;
-      transition: 0.2s ease-in-out;
-      cursor: pointer; }
-    .weOffer_block_content_image3:hover {
-      background: url("../img/offers/hover3.png"); }
-    .weOffer_block_content_image4 {
-      background: url("../img/offers/4.png");
-      background-size: 167px 169px;
-      background-repeat: no-repeat;
-      width: 167px;
-      height: 169px;
-      transition: 0.2s ease-in-out;
-      cursor: pointer; }
-    .weOffer_block_content_image4:hover {
-      background: url("../img/offers/hover4.png"); }
-    .weOffer_block_content_image5 {
-      background: url("../img/offers/5.png");
-      background-size: 167px 169px;
-      background-repeat: no-repeat;
-      width: 167px;
-      height: 169px;
-      transition: 0.2s ease-in-out;
-      cursor: pointer; }
-    .weOffer_block_content_image5:hover {
-      background: url("../img/offers/hover5.png"); }
-    .weOffer_block_content_image6 {
-      background: url("../img/offers/6.png");
-      background-size: 167px 169px;
-      background-repeat: no-repeat;
-      width: 167px;
-      height: 169px;
-      transition: 0.2s ease-in-out;
-      cursor: pointer; }
-    .weOffer_block_content_image6:hover {
-      background: url("../img/offers/hover6.png"); }
+    padding-bottom: 70px;
+    padding-top: 40px; }
+  .weOffer_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .weOffer_block_content {
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      padding-bottom: 50px; }
+      .weOffer_block_content_description {
+        width: 167px;
+        padding-top: 10px;
+        font-family: 'Comic Sans MS', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #272f2f; }
+      .weOffer_block_content_image1 {
+        background: url("../img/offers/1.png");
+        background-size: 167px 169px;
+        background-repeat: no-repeat;
+        width: 167px;
+        height: 169px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+        background-position: right; }
+      .weOffer_block_content_image1:hover {
+        background: url("../img/offers/hover1.png");
+        background-size: 167px 169px; }
+      .weOffer_block_content_image2 {
+        background: url("../img/offers/2.png");
+        background-size: 167px 169px;
+        background-repeat: no-repeat;
+        width: 167px;
+        height: 169px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .weOffer_block_content_image2:hover {
+        background: url("../img/offers/hover2.png"); }
+      .weOffer_block_content_image3 {
+        background: url("../img/offers/3.png");
+        background-size: 167px 169px;
+        background-repeat: no-repeat;
+        width: 167px;
+        height: 169px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .weOffer_block_content_image3:hover {
+        background: url("../img/offers/hover3.png"); }
+      .weOffer_block_content_image4 {
+        background: url("../img/offers/4.png");
+        background-size: 167px 169px;
+        background-repeat: no-repeat;
+        width: 167px;
+        height: 169px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .weOffer_block_content_image4:hover {
+        background: url("../img/offers/hover4.png"); }
+      .weOffer_block_content_image5 {
+        background: url("../img/offers/5.png");
+        background-size: 167px 169px;
+        background-repeat: no-repeat;
+        width: 167px;
+        height: 169px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .weOffer_block_content_image5:hover {
+        background: url("../img/offers/hover5.png"); }
+      .weOffer_block_content_image6 {
+        background: url("../img/offers/6.png");
+        background-size: 167px 169px;
+        background-repeat: no-repeat;
+        width: 167px;
+        height: 169px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .weOffer_block_content_image6:hover {
+        background: url("../img/offers/hover6.png"); }
 
 .contacts {
   background: url("../img/bg_png/3.png");
@@ -575,6 +589,35 @@ table {
       .contacts_block_right .social .facebook:hover {
         background: url("../img/sotial_network/fb_active.png"); }
 
+.btn_top {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 17px 17px;
+  border-radius: 50%;
+  box-shadow: 9px 9px 40px -4px rgba(0, 0, 0, 0.75);
+  transition: all 0.7s ease;
+  background: #1cb69d;
+  color: #fafafa;
+  border: none;
+  cursor: pointer;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  display: none;
+  z-index: 200; }
+
+.btn_top:focus {
+  outline: none; }
+
+iframe {
+  width: 100%;
+  height: 450px;
+  border: 0px; }
+
 /* Navigation */
 @media only screen and (max-width: 905px) {
   .menu {
@@ -616,7 +659,13 @@ table {
     padding-left: 20px; }
 
   .help_block_right_content_box_description {
-    padding-left: 10px; } }
+    padding-left: 10px; }
+
+  .btn_top {
+    display: block; } }
 @media only screen and (max-width: 639px) {
   .contacts span {
     color: #272f2f; } }
+@media only screen and (max-width: 1343px) {
+  .sidePanelRight {
+    display: none; } }

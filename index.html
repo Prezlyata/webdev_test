@@ -7,16 +7,16 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>webdev_test</title>
 </head>
-<body>
+<body id="idHome">
 	<div class="head">
 		<div class="container">
 			<nav class="menu">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Our Requirement</a></li>
-					<li><a href="#">Help</a></li>
-					<li><a href="#">We Offer</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a href="#idHome">Home</a></li>
+					<li><a href="#idRequirement">Our Requirement</a></li>
+					<li><a href="#idHelp">Help</a></li>
+					<li><a href="#idOffer">We Offer</a></li>
+					<li><a href="#idContacts">Contacts</a></li>
 				</ul>
 			</nav>
 			<div class="head_block">
@@ -54,20 +54,21 @@
 				</div>
 			</div>
 			<ul class="menu">
-				<li class="menu-item"><a href="#">Home</a>
+				<li class="menu-item"><a href="#idHome">Home</a>
 				</li>
-				<li class="menu-item"><a href="#">Our Requirement</a>
+				<li class="menu-item"><a href="#idRequirement">Our Requirement</a>
 				</li>
-				<li class="menu-item"><a href="#">Help</a>
+				<li class="menu-item"><a href="#idHelp">Help</a>
 				</li>
-				<li class="menu-item"><a href="#">We Offer</a>
+				<li class="menu-item"><a href="#idOffer">We Offer</a>
 				</li>
-				<li class="menu-item"><a href="#">Contacts</a>
+				<li class="menu-item"><a href="#idContacts">Contacts</a>
 				</li>
 			</ul>
 		</div>
 	</div>
-	<section class="ourRequirement">
+	<section id="idRequirement" class="ourRequirement">
+		<img class="sidePanelLeft" src="img/bg_png/left.png" alt="sidePanelLeft">
 		<div class="container">
 			<h2>Our Requirement</h2>	
 			<div class="ourRequirement_block">
@@ -138,7 +139,7 @@
 			</div>
 		</div>	
 	</section>
-	<section class="help">
+	<section id="idHelp" class="help">
 		<h2>Help</h2>
 		<div class="help_block">
 			<div class="help_block_left">
@@ -188,7 +189,8 @@
 			</div>
 		</div>
 	</section>
-	<section class="weOffer">
+	<section id="idOffer" class="weOffer">
+		<img class="sidePanelRight" src="img/bg_png/right.png" alt="sidePanelRight">
 		<div class="container">
 			<h2>We Offer:</h2>
 			<div class="weOffer_block">
@@ -237,7 +239,7 @@
 			</div>
 		</div>
 	</section>
-	<footer class="contacts">
+	<footer id="idContacts" class="contacts">
 		<div class="container">
 			<h2>Contacts</h2>
 			<div class="contacts_block">
@@ -248,7 +250,6 @@
 							<input type="text" name="name" required>
 							<label>Input your name</label>
 						</div>
-
 						<div class="group">      
 							<input type="text" name="name"  required>
 							<label>Input your email</label>
@@ -271,9 +272,14 @@
 				</div>
 			</div>
 		</div>
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.703603283856!2d24.025837237091867!3d49.844453116218666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add72f1d7138b%3A0x82727129107fb873!2sLviv+Opera+House!5e0!3m2!1sru!2sua!4v1534668985354" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.703603283856!2d24.025837237091867!3d49.844453116218666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add72f1d7138b%3A0x82727129107fb873!2sLviv+Opera+House!5e0!3m2!1sru!2sua!4v1534668985354" allowfullscreen></iframe>
 		<span>Created by ...</span>
 	</footer>
-	<script src="js/main.js"></script>	
+	<div class="btn_scroll">
+		<a href="#idHome" class="btn_top">Up</a>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

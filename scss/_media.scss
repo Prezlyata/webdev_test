@@ -54,10 +54,19 @@
 	.help_block_right_content_box_description{
 		padding-left: 10px;
 	}
+	.btn_top{
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 639px) {
 	.contacts span{
 		color: $colorDarkGrey;
+	}
+}
+@media only screen and (max-width: 1343px) {
+
+	.sidePanelRight {
+		display: none;
 	}
 }
