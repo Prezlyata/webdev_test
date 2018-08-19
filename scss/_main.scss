@@ -444,7 +444,7 @@ $menuItems: 7;
 			}
 			&_image2{
 				background: url('../img/offers/2.png');
-				background-size: 189x 189px;
+				background-size: 167px 169px;
 				background-repeat: no-repeat;
 				width: 167px;
 				height: 169px;
@@ -456,7 +456,7 @@ $menuItems: 7;
 			}
 			&_image3{
 				background: url('../img/offers/3.png');
-				background-size: 189x 189px;
+				background-size: 167px 169px;
 				background-repeat: no-repeat;
 				width: 167px;
 				height: 169px;
@@ -468,7 +468,7 @@ $menuItems: 7;
 			}
 			&_image4{
 				background: url('../img/offers/4.png');
-				background-size: 189x 189px;
+				background-size: 167px 169px;
 				background-repeat: no-repeat;
 				width: 167px;
 				height: 169px;
@@ -480,7 +480,7 @@ $menuItems: 7;
 			}
 			&_image5{
 				background: url('../img/offers/5.png');
-				background-size: 189x 189px;
+				background-size: 167px 169px;
 				background-repeat: no-repeat;
 				width: 167px;
 				height: 169px;
@@ -492,7 +492,7 @@ $menuItems: 7;
 			}
 			&_image6{
 				background: url('../img/offers/6.png');
-				background-size: 189x 189px;
+				background-size: 167px 169px;
 				background-repeat: no-repeat;
 				width: 167px;
 				height: 169px;
@@ -508,8 +508,19 @@ $menuItems: 7;
 .contacts{
 	background: url("../img/bg_png/3.png");
 	background-repeat: no-repeat;
-//	background-position: top center;
 	width: 100%;
+	span{
+		display: flex;
+		justify-content: center;
+		font-family: 'Comic Sans MS', sans-serif;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 400;
+		color: $colorWhite;
+		text-align: center;
+		padding-bottom: 25px;
+		padding-top: 25px;
+	}
 	h2{
 		font-family: 'Comic Sans MS', sans-serif;
 		text-transform: uppercase;
@@ -631,6 +642,43 @@ $menuItems: 7;
 				color: $colorLightGrey;
 				letter-spacing: 1px;
 			}
+			.social{
+				display: flex;
+				justify-content: space-around;
+				padding-bottom: 100px;
+				padding-top: 85px;
+				.linkedIn{
+					width: 32px;
+					height: 32px;
+					background: url("../img/sotial_network/linkedin.png");
+					transition: 0.2s ease-in-out;
+					cursor: pointer;
+				}
+				.linkedIn:hover{
+					background: url('../img/sotial_network/linkedin_active.png');
+				}
+				.twitter{
+					width: 32px;
+					height: 32px;
+					background: url('../img/sotial_network/twitter.png');
+					transition: 0.2s ease-in-out;
+					cursor: pointer;
+				}
+				.twitter:hover{
+					background: url('../img/sotial_network/twiter_active.png');
+				}
+				.facebook{
+					width: 32px;
+					height: 32px;
+					background: url('../img/sotial_network/fb.png');
+					transition: 0.2s ease-in-out;
+					cursor: pointer;
+				}
+				.facebook:hover{
+					background: url('../img/sotial_network/fb_active.png');
+				}
+			}
 		}
 	}
 }
+

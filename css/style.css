@@ -379,7 +379,7 @@ table {
       background-size: 167px 169px; }
     .weOffer_block_content_image2 {
       background: url("../img/offers/2.png");
-      background-size: 189x 189px;
+      background-size: 167px 169px;
       background-repeat: no-repeat;
       width: 167px;
       height: 169px;
@@ -389,7 +389,7 @@ table {
       background: url("../img/offers/hover2.png"); }
     .weOffer_block_content_image3 {
       background: url("../img/offers/3.png");
-      background-size: 189x 189px;
+      background-size: 167px 169px;
       background-repeat: no-repeat;
       width: 167px;
       height: 169px;
@@ -399,7 +399,7 @@ table {
       background: url("../img/offers/hover3.png"); }
     .weOffer_block_content_image4 {
       background: url("../img/offers/4.png");
-      background-size: 189x 189px;
+      background-size: 167px 169px;
       background-repeat: no-repeat;
       width: 167px;
       height: 169px;
@@ -409,7 +409,7 @@ table {
       background: url("../img/offers/hover4.png"); }
     .weOffer_block_content_image5 {
       background: url("../img/offers/5.png");
-      background-size: 189x 189px;
+      background-size: 167px 169px;
       background-repeat: no-repeat;
       width: 167px;
       height: 169px;
@@ -419,7 +419,7 @@ table {
       background: url("../img/offers/hover5.png"); }
     .weOffer_block_content_image6 {
       background: url("../img/offers/6.png");
-      background-size: 189x 189px;
+      background-size: 167px 169px;
       background-repeat: no-repeat;
       width: 167px;
       height: 169px;
@@ -432,6 +432,17 @@ table {
   background: url("../img/bg_png/3.png");
   background-repeat: no-repeat;
   width: 100%; }
+  .contacts span {
+    display: flex;
+    justify-content: center;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px; }
   .contacts h2 {
     font-family: 'Comic Sans MS', sans-serif;
     text-transform: uppercase;
@@ -534,6 +545,35 @@ table {
       padding-bottom: 23px;
       color: #fafafa;
       letter-spacing: 1px; }
+    .contacts_block_right .social {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 100px;
+      padding-top: 85px; }
+      .contacts_block_right .social .linkedIn {
+        width: 32px;
+        height: 32px;
+        background: url("../img/sotial_network/linkedin.png");
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .contacts_block_right .social .linkedIn:hover {
+        background: url("../img/sotial_network/linkedin_active.png"); }
+      .contacts_block_right .social .twitter {
+        width: 32px;
+        height: 32px;
+        background: url("../img/sotial_network/twitter.png");
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .contacts_block_right .social .twitter:hover {
+        background: url("../img/sotial_network/twiter_active.png"); }
+      .contacts_block_right .social .facebook {
+        width: 32px;
+        height: 32px;
+        background: url("../img/sotial_network/fb.png");
+        transition: 0.2s ease-in-out;
+        cursor: pointer; }
+      .contacts_block_right .social .facebook:hover {
+        background: url("../img/sotial_network/fb_active.png"); }
 
 /* Navigation */
 @media only screen and (max-width: 905px) {
@@ -577,3 +617,6 @@ table {
 
   .help_block_right_content_box_description {
     padding-left: 10px; } }
+@media only screen and (max-width: 639px) {
+  .contacts span {
+    color: #272f2f; } }
