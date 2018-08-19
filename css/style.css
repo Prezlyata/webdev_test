@@ -109,10 +109,10 @@ table {
           text-transform: uppercase;
           color: #1cb69d;
           text-transform: uppercase; }
-      .head_block_left .btn-send {
+      .head_block_left .btn-sent {
         display: flex;
         justify-content: center; }
-        .head_block_left .btn-send button {
+        .head_block_left .btn-sent button {
           background-image: linear-gradient(to right, #fb6a4e 0%, #fda085 51%, #ff606a 100%);
           background-size: 200% auto;
           font-family: 'Comic Sans MS', sans-serif;
@@ -127,9 +127,9 @@ table {
           cursor: pointer;
           transition: 0.5s;
           border-radius: 5px; }
-        .head_block_left .btn-send button:focus {
+        .head_block_left .btn-sent button:focus {
           outline: none; }
-        .head_block_left .btn-send button:hover {
+        .head_block_left .btn-sent button:hover {
           background-position: right center; }
     .head_block_right {
       display: flex;
@@ -427,6 +427,113 @@ table {
       cursor: pointer; }
     .weOffer_block_content_image6:hover {
       background: url("../img/offers/hover6.png"); }
+
+.contacts {
+  background: url("../img/bg_png/3.png");
+  background-repeat: no-repeat;
+  width: 100%; }
+  .contacts h2 {
+    font-family: 'Comic Sans MS', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 200px; }
+  .contacts_block {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .contacts_block_left h3 {
+      font-family: 'Comic Sans MS', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fafafa;
+      padding-top: 20px; }
+    .contacts_block_left form {
+      margin-top: 88px; }
+      .contacts_block_left form .group {
+        position: relative;
+        margin-bottom: 45px; }
+      .contacts_block_left form input {
+        font-size: 16px;
+        font-family: 'Comic Sans MS', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        padding: 10px 10px 10px 5px;
+        display: block;
+        width: 331px;
+        border: none;
+        border-bottom: 2px solid #1cb69d;
+        color: #fafafa;
+        background: none; }
+        .contacts_block_left form input:focus {
+          outline: none; }
+      .contacts_block_left form label {
+        color: #999;
+        font-size: 16px;
+        font-family: 'Comic Sans MS', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        position: absolute;
+        pointer-events: none;
+        left: 5px;
+        top: 10px;
+        transition: 0.2s ease all; }
+      .contacts_block_left form input:focus ~ label, .contacts_block_left form input:valid ~ label {
+        top: -20px;
+        font-size: 16px;
+        font-family: 'Comic Sans MS', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #1cb69d;
+        text-transform: uppercase; }
+    .contacts_block_left .btn-sent {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 40px; }
+      .contacts_block_left .btn-sent button {
+        background-image: linear-gradient(to right, #fb6a4e 0%, #fda085 51%, #ff606a 100%);
+        background-size: 200% auto;
+        font-family: 'Comic Sans MS', sans-serif;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        height: 60px;
+        width: 240px;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 5px; }
+      .contacts_block_left .btn-sent button:focus {
+        outline: none; }
+      .contacts_block_left .btn-sent button:hover {
+        background-position: right center; }
+    .contacts_block_right h3 {
+      font-family: 'Comic Sans MS', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 72px;
+      color: #fafafa;
+      padding-top: 20px; }
+    .contacts_block_right p {
+      font-family: 'Comic Sans MS', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      padding-bottom: 23px;
+      color: #fafafa;
+      letter-spacing: 1px; }
 
 /* Navigation */
 @media only screen and (max-width: 905px) {

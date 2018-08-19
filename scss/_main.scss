@@ -136,7 +136,7 @@ table {
 					}
 				}
 			}
-			.btn-send{
+			.btn-sent{
 				display: flex;
 				justify-content:center;
 				button{
@@ -501,6 +501,135 @@ $menuItems: 7;
 			}
 			&_image6:hover{
 				background: url('../img/offers/hover6.png');
+			}
+		}
+	}
+}
+.contacts{
+	background: url("../img/bg_png/3.png");
+	background-repeat: no-repeat;
+//	background-position: top center;
+	width: 100%;
+	h2{
+		font-family: 'Comic Sans MS', sans-serif;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 500;
+		color: $colorWhite;
+		text-align: center;
+		padding-bottom: 70px;
+		padding-top: 200px;
+	}
+	&_block{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		&_left{
+			h3{
+				font-family: 'Comic Sans MS', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				text-align: center;
+				text-transform: uppercase;
+				color: $colorLightGrey;
+				padding-top: 20px;
+			}
+			form{
+				margin-top: 88px;
+				.group {
+					position: relative;
+					margin-bottom: 45px;
+				}
+				input {
+					font-size: 16px;
+					font-family: 'Comic Sans MS', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					padding: 10px 10px 10px 5px;
+					display: block;
+					width: 331px;
+					border: none;
+					border-bottom: 2px solid $colorLightSeaGreen;
+					color: $colorLightGrey;
+					background: none;
+					&:focus {
+						outline: none;
+					}
+				}
+				label {
+					color: $colorGrey;
+					font-size: 16px;
+					font-family: 'Comic Sans MS', sans-serif;
+					font-style: normal;
+					font-weight: 400;
+					position: absolute;
+					pointer-events: none;
+					left: 5px;
+					top: 10px;
+					transition: 0.2s ease all;
+				}
+				input {
+					&:focus ~ label, &:valid ~ label {
+						top: -20px;
+						font-size: 16px;
+						font-family: 'Comic Sans MS', sans-serif;
+						font-style: normal;
+						font-weight: 400;
+						text-transform: uppercase;
+						color: $colorLightSeaGreen;
+						text-transform: uppercase;
+					}
+				}
+			}
+			.btn-sent{
+				display: flex;
+				justify-content:center;
+				padding-bottom: 40px;
+				button{
+					background-image: linear-gradient(to right, $colorBtnOrange 0%, $colorBtnLightPink 51%, $colorBtnPink 100%);
+					background-size: 200% auto;
+					font-family:  'Comic Sans MS', sans-serif;
+					text-transform: uppercase;
+					font-size: 18px;
+					font-weight: 600;
+					color: $colorWhite;
+					height: 60px;
+					width: 240px;
+					text-align: center;
+					border: none;
+					cursor: pointer;
+					transition: 0.5s;
+					border-radius: 5px;
+				}
+				button:focus{
+					outline: none;
+				}
+				button:hover{
+					background-position: right center;
+				}
+			}
+		}
+		&_right{
+			h3{
+				font-family: 'Comic Sans MS', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				text-align: center;
+				text-transform: uppercase;
+				padding-bottom: 72px;
+				color: $colorLightGrey;
+				padding-top: 20px;
+			}
+			p{
+				font-family: 'Comic Sans MS', sans-serif;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				padding-bottom: 23px;
+				color: $colorLightGrey;
+				letter-spacing: 1px;
 			}
 		}
 	}
